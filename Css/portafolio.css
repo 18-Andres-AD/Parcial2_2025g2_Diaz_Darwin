@@ -1,0 +1,88 @@
+ #portafolio {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 40px 20px;
+     background: linear-gradient(135deg, #1c3132, #192a2c);
+ }
+
+ #portafolio h2 {
+     font-size: 2.5rem;
+     margin-bottom: 40px;
+     font-family: "Archivo Black", sans-serif;
+     font-size: 3rem;
+     color: yellow;
+     text-shadow: 4px 4px 8px rgba(255, 0, 0, 0.808);
+     margin-bottom: 20px;
+ }
+
+ #portafolio h2::after {
+     content: "";
+     width: 200px;
+     height: 4px;
+     background: #ff9800;
+     border-radius: 2px;
+ }
+
+ .portafolio-container {
+     display: flex;
+     gap: 20px;
+     padding: 20px;
+ }
+
+
+ .card:hover {
+     transform: translateY(-12px) scale(1.05);
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+     animation: pulse 0.8s;
+ }
+
+ .card-body h4 {
+     font-size: 1.3rem;
+     margin-bottom: 10px;
+     color: #ff5722;
+     text-align: center;
+ }
+
+ .card-body p {
+     font-size: 0.95rem;
+     line-height: 1.5;
+     text-align: center;
+ }
+
+ .card {
+     border-radius: 20px;
+     border: 1px solid transparent;
+     box-shadow: 0 0 4px 4px rgba(255, 255, 0, 0.7);
+ }
+
+ .card-body {
+     background-color: rgba(122, 237, 255, 0.334);
+     text-align: center;
+ }
+
+
+ @media (min-width: 768px) and (max-width: 1023px) {
+     #portafolio {
+         height: 100vh;
+     }
+
+     #portafolio .row {
+         gap: 20px;
+     }
+
+     #portafolio .card {
+         margin: 10px auto;
+     }
+
+ }
+
+ @media (max-width: 767px) {
+     #portafolio .row {
+         gap: 20px;
+     }
+
+     #portafolio .card {
+         margin: 10px auto;
+     }
+ }

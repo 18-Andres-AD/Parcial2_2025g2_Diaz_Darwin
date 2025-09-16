@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#footer {
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem;
+}
+
+
+#footer .social-icons a {
+  margin: 12px;
+  color: white;
+  font-size: 2.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+#footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #00adb5;
+}
+
+
+#footer .contacto p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+#footer .contacto a {
+  color: #ff0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#footer .derechos {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+#footer .autor {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) { 
+     /*  Pie de pagina */
+  #footer .social-icons a {
+    font-size: 2rem;
+  }
+
+  #footer .contacto p {
+    font-size: 1rem;
+  }
+
+  #footer .derechos {
+    font-size: 0.7rem;
+  }
+  }
